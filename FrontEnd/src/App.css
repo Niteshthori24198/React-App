@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.addbook_container {
+  background-color: rgb(244, 249, 249);
+  margin: 30px;
+  padding: 20px;
+}
+
+.addbook_container > form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  gap: 20px;
+}
+.addbook_container > form > input, .addbook_container > form > select{
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  outline: none;
+}
+.addbook_container > form > textarea{
+  letter-spacing: 2px;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+}
+
+.addbook_container input[type="submit"]{
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  width: 40%;
+  cursor: pointer;
+  margin: auto;
+}
+
+.addbook_container input[type="submit"]:hover{
+  background-color: #004894;
+}
+
+
+.bookSection{
+  margin: 30px;
+  padding: 20px;
+}
+
+.bookSection >  div:nth-child(1){
+  display: flex;
+  justify-content: space-around;
+}
+
+.bookSection >  div:nth-child(1) > select{
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+
+.bookSection >  div:nth-child(2){
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 30px auto;
+}
+
+.bookSection >  div:nth-child(2) >div{
+  /* border: 1px solid gray; */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.deleteBtn{
+  border: none;
+  outline: none;
+  background-color: rgb(248, 15, 15);
+  color: white;
+  font-weight: bold;
+  width: 40%;
+  cursor: pointer;
+  margin: auto;
+  padding: 5px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.deleteBtn:hover{
+  background-color: rgb(200, 5, 5);
+}
